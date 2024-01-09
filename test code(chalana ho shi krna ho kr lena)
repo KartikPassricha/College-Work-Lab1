@@ -1,0 +1,68 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include <string.h>
+
+using namespace std;
+
+class students
+{
+    private:
+    int roll_no;
+    char name[100];
+    public:
+    int chem_marks;
+    int maths_marks;
+    int phy_marks;
+    
+    void setdata(int roll_no,char name[100]);
+    void showdata();
+    
+};
+
+void students :: setdata(int a,char b[100])
+{
+    roll_no=a;
+    name[100]=b[100];
+}
+void students :: showdata()
+{
+    char choice;
+    cout<<"The name is "<<name<<endl;
+    cout<<"The roll no. is "<<roll_no<<endl;
+    cout<<"Enter the subject letter for marks"<<endl;
+    cin>>choice;
+    if(choice=='P' || choice=='p')
+    {
+        cout<<"The physics are "<<phy_marks<<endl;
+    }
+    else if(choice=='C' || choice=='c')
+    {
+        cout<<"The chem marks are "<<chem_marks<<endl;
+    }
+    else if(choice=='M' || choice=='m')
+    {
+        cout<<"The maths marks are "<<maths_marks<<endl;
+    }
+    else
+    {
+       cout<<"No subject specified"<<endl; 
+    }
+    
+}
+int main() {
+    
+    char s_name[100];
+    int roll;
+    cout<<"Enter the name of the student "<<endl;
+    cin>>s_name;
+    student s_name;
+    cout<<"Enter the roll no. "<<endl;
+    cin>>s_name.roll;
+    cout<<"Enter the phy marks "<<endl;
+    
+    
+    
+    
+
+    return 0;
+}
