@@ -1,0 +1,2 @@
+a) ABCDEFGHIJ is the output because of the ASCII values.
+b) fg will be the output because the pointer's position is moved 5 points ahead.
