@@ -1,0 +1,4 @@
+p = 0x69fed4, ptr = 0x69fed4
+*p = 3, *ptr = 0x69fed4
+sizeof(p) = 4, sizeof(*p) = 4
+sizeof(ptr) = 4, sizeof(*ptr) = 20
