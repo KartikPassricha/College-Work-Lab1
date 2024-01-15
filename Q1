@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    float *a=NULL;
+    int *b=NULL;
+    a=new float(20.1);
+    b=new int(10);
+
+    cout<<a<<endl;
+    cout<<b<<endl;
+    cout<<*a<<endl;
+    cout<<*b<<endl;
+    delete a,b;
+}
