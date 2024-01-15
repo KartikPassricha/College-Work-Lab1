@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a;
+    cout<<"Enter the number of students"<<endl;
+    cin>>a;
+    int *ptr= new int[a];
+    for(int i=0;i<a;i++)
+    {
+        cin>>*(ptr+i);
+    }
+    for(int i=0;i<a;i++)
+    {
+        cout<<*(ptr+i);
+    }
+    delete []ptr;
+
+}
